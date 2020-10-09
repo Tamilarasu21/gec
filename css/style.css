@@ -1,0 +1,45 @@
+*
+{
+    margin:0;
+    padding:0;
+    font-family:helvetica;
+}
+.header
+{
+    text-align:center;
+    
+    padding:5px;
+    background-color: beige;
+}
+.header .logo .one
+{
+    font-family:'Courier New';
+    font-weight: 600;
+    font-size:22px;
+}
+.navbar-default #brand-logo
+{
+    margin-top:-15px
+}
+
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+  @media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+      font-size: 3.5rem;
+    }
+  }
+
+#footer
+{
+  background:rgb(83, 83, 83);
+  color:snow;
+  padding:5px;
+}
