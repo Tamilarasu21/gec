@@ -22,7 +22,7 @@
     margin-top:-15px
 }
 
-.bd-placeholder-img {
+/* .bd-placeholder-img {
     font-size: 1.125rem;
     text-anchor: middle;
     -webkit-user-select: none;
@@ -35,11 +35,29 @@
     .bd-placeholder-img-lg {
       font-size: 3.5rem;
     }
-  }
+  } */
 
 #footer
 {
   background:rgb(83, 83, 83);
   color:snow;
   padding:5px;
+}
+.modal .form-group input:invalid:required
+{
+	outline: 0 !important;
+    border:1px solid  skyblue;
+    box-shadow: 1px 1px 3px skyblue;
+}
+.modal .form-group input:invalid:focus 
+{
+	outline: 0 !important;
+    border:1px solid red;
+    box-shadow: 1px 1px 3px red;
+}
+.modal .form-group input:valid 
+{
+	outline: 0 !important;
+    border:1px solid green;
+    box-shadow: 1px 1px 3px green;
 }
