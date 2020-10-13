@@ -7,7 +7,6 @@
 .header
 {
     text-align:center;
-    
     padding:5px;
     background-color: beige;
 }
@@ -46,8 +45,8 @@
 .modal .form-group input:invalid:required
 {
 	outline: 0 !important;
-    border:1px solid  skyblue;
-    box-shadow: 1px 1px 3px skyblue;
+    border:1px solid  gainsboro;
+    box-shadow: none;
 }
 .modal .form-group input:invalid:focus 
 {

@@ -5,9 +5,9 @@ function checkPass()
 
     if(password.value=="" && cpassword.value=="")
     {
-        cpassword.style.border = "1px solid skyblue";
+        cpassword.style.border = "1px solid gainsboro";
         cpassword.style.outline = "none";
-        cpassword.style.boxShadow = "1px 1px 3px skyblue";
+        cpassword.style.boxShadow = "none";
     }
     else if(password.value == cpassword.value)
     {
