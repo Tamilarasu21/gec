@@ -2,30 +2,55 @@
 {
     margin:0;
     padding:0;
-    font-family:helvetica;
+    scrollbar-width: none;
+    overflow: -moz-scrollbars-none;
 }
-.header
-{
-    text-align:center;
-    padding:5px;
-    background-color: beige;
+::-webkit-scrollbar {
+  display: none;
 }
-.header .logo .one
-{
-    font-family:'Courier New';
-    font-weight: 600;
-    font-size:22px;
+@font-face{
+    font-family:"Shiny Signature";
+    src:url(../fonts/Shiny\ Signature.ttf);
 }
-.navbar-default #brand-logo
-{
-    margin-top:-15px
+@media (min-width: 768px) {
+    body {
+      font-size: 14px;
+    }
 }
-#footer
-{
-  background:rgb(83, 83, 83);
-  color:snow;
-  padding:5px;
-}
+@media (max-width: 768px) {
+    body,
+    p {
+      font-size: 12px;
+    }
+    a {
+      font-size: 12px;
+    }
+    h1 {
+      font-size: 14px;
+      font-weight: 600;
+    }
+    h2 {
+      font-size: 13.5px;
+      font-weight: 600;
+    }
+    h3 {
+      font-size: 13px;
+      font-weight: 600;
+    }
+    h4 {
+      font-size: 12.5px;
+      font-weight: 600;
+    }
+    h5 {
+      font-size: 12px;
+      font-weight: 600;
+    }
+    h5 {
+      font-size: 11.5px;
+      font-weight: 600;
+    }
+  }
+/* validation starts */
 .modal .form-group input:invalid:required
 {
 	outline: 0 !important;
@@ -44,3 +69,68 @@
     border:1px solid green;
     box-shadow: 1px 1px 3px green;
 }
+/* validation ends */
+/* header & footer starts */
+@media (min-height: 480px) {
+    header {
+      position: -webkit-sticky;
+      position: sticky;
+      top: 0;
+    }
+    footer {
+      position: -webkit-sticky;
+      bottom: 0;
+      left: 0;
+    }
+  }
+.header
+{
+    text-align:center;
+    padding:5px;
+    background-color: black;
+}
+.header .logo .one
+{
+    font-family:'Shiny Signature';
+    color:gold;
+    font-size:15px;
+}
+.navbar-default #brand-logo
+{
+    margin-top:-13px;
+}
+header {
+    position: -webkit-sticky;
+    z-index: 100;
+}
+header {
+  position: -webkit-sticky;
+}
+header .navbar-default
+{
+    background:#e6f7ff;
+    margin-left: -1px;
+    margin-right: -1px;
+    border: none;
+    max-height:50px;
+}
+header .navbar-default .navbar-nav .nav-item a{
+    color:#054785;
+}
+header .navbar-default .navbar-nav .nav-item a:hover{
+    color:#e6f7ff;
+    background:#054785;
+}
+header .navbar-default .navbar-nav .active a{
+    color:#e6f7ff;
+    background:#054785;
+    max-height:50px;
+}
+
+#footer
+{
+  background:rgb(83, 83, 83);
+  color:snow;
+  padding:5px;
+}
+/* header & footer ends */
