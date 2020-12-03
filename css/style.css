@@ -8,19 +8,6 @@
 ::-webkit-scrollbar {
   display: none;
 }
-body
-{
-    margin:0;
-    padding:0;
-    overflow-x:hidden;
-    position:relative;
-    display:flex;
-    flex-direction: column;
-}
-@font-face{
-    font-family:"Shiny Signature";
-    src:url(../fonts/Shiny\ Signature.ttf);
-}
 @media (min-width: 768px) {
     body {
       font-size: 14px;
@@ -80,10 +67,9 @@ body
 }
 /* validation ends */
 /* header & footer starts */
-@media (min-height: 480px) {
+@media screen and (min-height: 480px) {
     header{
-      position: sticky;
-      position: -webkit-sticky;
+      position:sticky;
       z-index: 999 !important;
       top: 0;
     }
@@ -96,26 +82,18 @@ body
 
 .navbar-light #brand-logo
 {
-    margin-top:-13px;
+    margin-top:-5px;
 }
 header {
     position: -webkit-sticky;
-    position:sticky;
-    z-index: 100;
-    background:white;
+    position: sticky;
+    z-index: 999 !important;
+    border-bottom:0.5px solid lightgray;
 }
 
 header .navbar-light .navbar-toggler
 {
   border-radius:0px;
-  border-color:1px solid black;
-}
-header .navbar-light .navbar-toggler .navbar-toggler-icon
-{
-  border-radius:0px;
-  outline: black;
-  -moz-outline-radius: 0px;
-  -webkit-outline-radius:0px;
 }
 header .navbar-light .navbar-nav .nav-item{
   padding:5px;
@@ -126,8 +104,7 @@ header .navbar-light .navbar-nav .active a{
 }
 .footer
 {
-  background:rgb(83, 83, 83);
-  flex-shrink:0;
+  background:rgb(0, 0, 0);
 }
 .footer-strip
 {
