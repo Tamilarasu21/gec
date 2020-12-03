@@ -8,11 +8,6 @@
 ::-webkit-scrollbar {
   display: none;
 }
-@media (min-width: 768px) {
-    body {
-      font-size: 14px;
-    }
-}
 @media (max-width: 768px) {
     body,
     p {
@@ -98,9 +93,12 @@ header .navbar-light .navbar-toggler
 header .navbar-light .navbar-nav .nav-item{
   padding:5px;
 }
-header .navbar-light .navbar-nav .active a{
+header .navbar-light .navbar-nav .active{
     background:white;
     box-shadow: inset 0px -6px 0px #054785;
+}
+header .navbar-light .navbar-nav .active .nav-link{
+  color:#054785;
 }
 .footer
 {
@@ -112,3 +110,18 @@ header .navbar-light .navbar-nav .active a{
   color:white;
 }
 /* header & footer ends */
+#blue
+{
+  color: #054785;
+}
+#bluebtn
+{
+  background:#054785;
+  color:white;
+  border-radius:0px;
+}
+.sqrinput
+{
+  border-radius:0px;
+  padding:7px 7px;
+}

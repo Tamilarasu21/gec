@@ -11,30 +11,22 @@
 </head>
 <body>
   <header>
-  <nav class="navbar navbar-expand-lg navbar-default" >
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top bg-white py-0">
       <div class="container">
-        <a href="#" class="navbar-brand"><img src="assets/geclogo.png" alt="" id="brand-logo" class="img-circle" width="45" height="45"></a>
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle info-color" data-toggle="collapse" data-target="#menu">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-        </div>
-        <div id="menu" class="collapse navbar-collapse">
-          <ul class="nav navbar-nav navbar-right">
-            <li class="nav-item"><a href="index.html"><b>Home</b></a></li>
-            <li class="nav-item"><a href="about.html"><b>About Us</b></a></li>
-            <li class="nav-item"><a href="events.html"><b>Events</b></a></li>
-            <li class="nav-item"><a href="board.html"><b>Executive Board</b></a></li>
-            <li class="nav-item"><a href="contact.html"><b>Contact Us</b></a></li>
-            <li class="nav-item active"><a href="newsletters.html"><b>Newsletters and Magazines</b></a></li>
-          </ul>
-          <!-- <ul class="nav navbar-nav" style="float:right">
-            <li class="nav-item"><a href="#" data-toggle="modal" data-target="#signup"><b>Signup</b></a></li>
-            <li class="nav-item"><a href="#" data-toggle="modal" data-target="#signin"><b>Signin</b></a></li>
-          </ul> -->
-        </div>
+        <a class="navbar-brand" href="#"><img src="assets/geclogo.png" alt="" id="brand-logo" class="img-circle" width="45" height="45"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="navbar-collapse collapse px-4" id="menu">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a href="index.html" class="nav-link"><b>Home</b></a></li>
+          <li class="nav-item"><a href="about.html" class="nav-link"><b>About Us</b></a></li>
+          <li class="nav-item"><a href="events.html" class="nav-link"><b>Events</b></a></li>
+          <li class="nav-item"><a href="board.html" class="nav-link"><b>Executive Board</b></a></li>
+          <li class="nav-item"><a href="contact.html" class="nav-link"><b>Contact Us</b></a></li>
+          <li class="nav-item active"><a href="newsletters.html" class="nav-link"><b>Newsletters and Magazines</b></a></li>
+        </ul>
+      </div>
       </div>
     </nav>
   </header>
@@ -107,6 +99,8 @@
 </div>
 <!-- modal signin end -->
 <div class="container">
+  <h3 class="text-center font-weight-bold p-3" id="blue">Newsletters and Magazines</h3>
+  <hr>
   <div class="row featurette">
     <div class="col-md-7">
       <h3 class="featurette-heading">First featurette heading. <span class="text-muted">It’ll blow your mind.</span></h3>
@@ -139,48 +133,54 @@
   <hr class="featurette-divider">
 </div>
 <!-- Footer starts-->
-<footer class="footer" style="background:black;padding-top:5px">
-  <div class="row">
-    <div class="container">
-      <div class="col-md-4 text-center p-3">
-        <div style="color: skyblue;font-weight:600;">Social Media</div>
-        <ul class="list-unstyled">
-          <li class="list-inline-item"><a href="#"><img src="assets/facebook-square.png" alt="f" width="15px" height="15px" style="background: white; text-decoration: none;padding:-5px">&nbsp;facebook.com/gec</a></li>
-          <li class="list-inline-item"><a href="#"><img src="assets/instagram-square.png" alt="i" width="15px" height="15px" style="background: white; text-decoration: none;padding:-5px">&nbsp;instagram.com/gec</a></li>
-          <li class="list-inline-item"><a href="#"><img src="assets/telegram-square.png" alt="t" width="15px" height="15px" style="background: white; text-decoration: none;padding:-5px">&nbsp;telegram.com/gec</a>
-          <li class="list-inline-item"><a href="#"><img src="assets/gmail.png" alt="t" width="15px" height="15px" style="background: white; text-decoration: none;padding:-5px">&nbsp;gec@gmail.com</a></li>
-          </li>
-        </ul>
+<footer class="footer bg-dark">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4 p-2">
+        <div class="text-white text-center font-weight-bold">Social Media</div>
+      <ul class="list-group list-unstyled text-center">
+        <li class="list-inline-item"><a href="#" class="text-decoration-none text-light"><img src="assets/facebook-square.png" alt="f" width="15px" height="15px" style="background: white;">&nbsp;facebook.com/gec</a></li>
+        <li class="list-inline-item"><a href="#" class="text-decoration-none text-light"><img src="assets/instagram-square.png" alt="i" width="15px" height="15px" style="background: white;">&nbsp;instagram.com/gec</a></li>
+        <li class="list-inline-item"><a href="#" class="text-decoration-none text-light"><img src="assets/telegram-square.png" alt="t" width="15px" height="15px" style="background: white;">&nbsp;telegram.com/gec</a>
+        <li class="list-inline-item"><a href="#" class="text-decoration-none text-light"><img src="assets/gmail.png" alt="t" width="15px" height="15px" style="background: white;">&nbsp;gec@gmail.com</a></li>
+        </li>
+      </ul>
       </div>
-      <div class="col-md-4 text-center">
-        <div style="color: skyblue;font-weight:600;">Representatives</div>
-        <div class="col-md-6">
-          <ul class="list-unstyled">
-            <li class="list-inline-item"><a href="#" style="color:whitesmoke" class="text-decoration-none">Person 1,<p><small style="font-size:11px">Secretary</small></p></a></li>
-            <li class="list-inline-item"><a href="#" style="color:whitesmoke" class="text-decoration-none">Person 2,<p><small style="font-size:11px">Assistant Secretary</small></p></a></li>
+    <div class="col-md-4 p-2">
+      <div class="text-white text-center font-weight-bold">Representatives</div>
+      <div class="row text-center">
+        <div class="col-md-6 p-2">
+          <ul class="list-group list-unstyled">
+            <li class="list-inline-item"><a href="#" class="text-decoration-none text-light">Person 1,<p><small style="font-size:11px">Secretary</small></p></a></li>
+            <li class="list-inline-item"><a href="#" class="text-decoration-none text-light">Person 2,<p><small style="font-size:11px">Assistant Secretary</small></p></a></li>
           </ul>
         </div>
-        <div class="col-md-6">
-          <ul class="list-unstyled">
-            <li class="list-inline-item"><a href="#" style="color:whitesmoke" class="text-decoration-none">Person 3,<p><small style="font-size:11px">Treasurer</small></p></a></li>
-            <li class="list-inline-item"><a href="#" style="color:whitesmoke" class="text-decoration-none">Person 4,<p><small style="font-size:11px">Executive Member</small></p></a></li>
+        <div class="col-md-6 p-2">
+          <ul class="list-group list-unstyled ">
+            <li class="list-inline-item"><a href="#" class="text-decoration-none text-light">Person 3,<p><small style="font-size:11px">Treasurer</small></p></a></li>
+            <li class="list-inline-item"><a href="#" class="text-decoration-none text-light">Person 4,<p><small style="font-size:11px">Executive Member</small></p></a></li>
           </ul>
         </div>
-      </div>
-      <div class="col-md-4 text-center">
-        <div style="color: skyblue;font-weight:600;">Important Links</div>
-        <ul class="list-unstyled">
-          <li class="list-inline-item"><a href="#" style="color:whitesmoke">Events</a></li>
-          <li class="list-inline-item"><a href="#" style="color:whitesmoke">Newsletters</a></li>
-          <li class="list-inline-item"><a href="#" style="color:whitesmoke">Leaderboard</a></li>
-          <li class="list-inline-item"><a href="#" style="color:whitesmoke">About</a></li>
-        </ul>
       </div>
     </div>
-    <div class="col-12 text-center" style="background: darkblue;color:white;font-family: verdana;">
-      &copy;2020 GEC
+    <div class="col-md-4 p-2">
+      <div class="text-white text-center font-weight-bold">Important Links</div>
+      <ul class="list-group list-unstyled text-center">
+        <li class="list-inline-item"><a href="#" class="text-decoration-none text-light">Events</a></li>
+        <li class="list-inline-item"><a href="#" class="text-decoration-none text-light">Newsletters</a></li>
+        <li class="list-inline-item"><a href="#" class="text-decoration-none text-light">Leaderboard</a></li>
+        <li class="list-inline-item"><a href="#" class="text-decoration-none text-light">About</a></li>
+      </ul>
     </div>
   </div>
+</div>
+<div class="footer-strip text-center">
+  <div class="copyright">&copy;GEC <span id="year">
+    <script>document.getElementById("year").innerHTML=(new Date().getFullYear()-1);
+      document.getElementById("year").innerHTML+="-"+new Date().getFullYear();
+      </script>
+  </span></div>
+</div>
 </footer>
 <!-- Footer ends -->
 <script type="text/javascript" src="js/validation.js"></script>
