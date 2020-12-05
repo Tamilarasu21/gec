@@ -8,39 +8,6 @@
 ::-webkit-scrollbar {
   display: none;
 }
-@media (max-width: 768px) {
-    body,
-    p {
-      font-size: 12px;
-    }
-    a {
-      font-size: 12px;
-    }
-    h1 {
-      font-size: 14px;
-      font-weight: 600;
-    }
-    h2 {
-      font-size: 13.5px;
-      font-weight: 600;
-    }
-    h3 {
-      font-size: 13px;
-      font-weight: 600;
-    }
-    h4 {
-      font-size: 12.5px;
-      font-weight: 600;
-    }
-    h5 {
-      font-size: 12px;
-      font-weight: 600;
-    }
-    h5 {
-      font-size: 11.5px;
-      font-weight: 600;
-    }
-  }
 /* validation starts */
 .modal .form-group input:invalid:required
 {
