@@ -22,3 +22,13 @@ function checkPass()
         cpassword.style.boxShadow = "1px 1px 3px red";
     }
 }  
+// shrinking navbar
+$(document).on("scroll", function(){
+
+    if ($(document).scrollTop() > 10){
+        $(".prime").addClass("shrink");
+    } else {
+        $(".prime").removeClass("shrink");
+    }
+
+});

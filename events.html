@@ -1,191 +1,229 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Events</title>
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/geclogo.png" />
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Events</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/geclogo.png" />
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
+
 <body>
   <header>
-    <nav class="navbar navbar-expand-lg navbar-light sticky-top bg-white py-0">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-white py-0 prime">
       <div class="container">
-        <a class="navbar-brand" href="#"><img src="assets/geclogo.png" alt="" id="brand-logo" class="img-circle" width="45" height="45"></a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="navbar-collapse collapse px-4" id="menu">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item"><a href="index.html" class="nav-link"><b>Home</b></a></li>
-          <li class="nav-item"><a href="about.html" class="nav-link"><b>About Us</b></a></li>
-          <li class="nav-item active"><a href="events.html" class="nav-link"><b>Events</b></a></li>
-          <li class="nav-item"><a href="board.html" class="nav-link"><b>Executive Board</b></a></li>
-          <li class="nav-item"><a href="contact.html" class="nav-link"><b>Contact Us</b></a></li>
-          <li class="nav-item"><a href="newsletters.html" class="nav-link"><b>Newsletters and Magazines</b></a></li>
-        </ul>
-      </div>
+        <a class="navbar-brand" href="#"><img src="assets/geclogo.png" alt="" id="brand-logo" class="img-circle"
+            width="45" height="45"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu" aria-controls="menu"
+          aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse collapse px-4" id="menu">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a href="index.html" class="nav-link"><b>Home</b></a></li>
+            <li class="nav-item"><a href="about.html" class="nav-link"><b>About Us</b></a></li>
+            <li class="nav-item active"><a href="events.html" class="nav-link"><b>Events</b></a></li>
+            <li class="nav-item"><a href="board.html" class="nav-link"><b>Executive Board</b></a></li>
+            <li class="nav-item"><a href="contact.html" class="nav-link"><b>Contact Us</b></a></li>
+            <li class="nav-item"><a href="newsletters.html" class="nav-link"><b>Newsletters and Magazines</b></a></li>
+          </ul>
+        </div>
       </div>
     </nav>
   </header>
-<!-- modal signup -->
-<div class="modal" id="signup" tabindex="-1" role="dialog">
-  <div class="modal-dialog">
-    <div class="modal-content col-md-8 col-md-offset-2">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <div class="text-center">
-          <img src="assets/geclogo.png" alt="" class="img-circle" width="50px" height="50px">
-          <h3 class="text-bold">Sign Up</h3>
+  <!-- modal signup -->
+  <div class="modal" id="signup" tabindex="-1" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content col-md-8 col-md-offset-2">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <div class="text-center">
+            <img src="assets/geclogo.png" alt="" class="img-circle" width="50px" height="50px">
+            <h3 class="text-bold">Sign Up</h3>
+          </div>
         </div>
-      </div>
-      <div class="modal-body">
-        <form class="form-signin" action="" method="post">
-          <div class="form-group">
-              <input type="email" id="email" class="form-control" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="Email address" required> 
-          </div>
-          <div class="form-group">
-              <input type="password" id="password" class="form-control" name="password" pattern=".{5,}" placeholder="Password" onkeyup="checkPass();" required>
-          </div>
-          <div class="form-group">
-              <input type="password" id="cpassword" class="form-control" name="cpassword" pattern=".{5,}" placeholder="Confirm Password" onkeyup="checkPass();" required>
-          </div>
-      </div>
-      <div class="modal-footer">
+        <div class="modal-body">
+          <form class="form-signin" action="" method="post">
+            <div class="form-group">
+              <input type="email" id="email" class="form-control" name="email"
+                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="Email address" required>
+            </div>
+            <div class="form-group">
+              <input type="password" id="password" class="form-control" name="password" pattern=".{5,}"
+                placeholder="Password" onkeyup="checkPass();" required>
+            </div>
+            <div class="form-group">
+              <input type="password" id="cpassword" class="form-control" name="cpassword" pattern=".{5,}"
+                placeholder="Confirm Password" onkeyup="checkPass();" required>
+            </div>
+        </div>
+        <div class="modal-footer">
           <div class="text-center">
             <input class="btn btn-primary" type="submit" name="signup" value="Sign up">
           </div>
-        </form>
+          </form>
+        </div>
       </div>
     </div>
   </div>
-</div>
-<!-- modal signup ends -->
-<!-- modal signin -->
-<div class="modal" id="signin">
-  <div class="modal-dialog">
-    <div class="modal-content col-md-8 col-md-offset-2">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <div class="text-center">
-          <img src="assets/geclogo.png" alt="" class="img-circle" width="50px" height="50px">
-          <h3 class="text-bold">Sign In</h3>
+  <!-- modal signup ends -->
+  <!-- modal signin -->
+  <div class="modal" id="signin">
+    <div class="modal-dialog">
+      <div class="modal-content col-md-8 col-md-offset-2">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <div class="text-center">
+            <img src="assets/geclogo.png" alt="" class="img-circle" width="50px" height="50px">
+            <h3 class="text-bold">Sign In</h3>
+          </div>
         </div>
-      </div>
-      <div class="modal-body">
-      <form class="form-signin" method="post" action="">
-          <div class="form-group">
-              <input type="email" id="email" class="form-control" name="email" placeholder="Email address" required autofocus>
-          </div>
-          <div class="form-group">
-              <input type="password" id="password" class="form-control" name="password" pattern=".{5,}" placeholder="Password" required>
-          </div>
-          <div class="checkbox mb-3">
+        <div class="modal-body">
+          <form class="form-signin" method="post" action="">
+            <div class="form-group">
+              <input type="email" id="email" class="form-control" name="email" placeholder="Email address" required
+                autofocus>
+            </div>
+            <div class="form-group">
+              <input type="password" id="password" class="form-control" name="password" pattern=".{5,}"
+                placeholder="Password" required>
+            </div>
+            <div class="checkbox mb-3">
               <label>
-              <input type="checkbox" value="remember-me"> Remember me
+                <input type="checkbox" value="remember-me"> Remember me
               </label>
-          </div>
-      </div>
-      <div class="modal-footer">
-        <div class="text-center">
+            </div>
+        </div>
+        <div class="modal-footer">
+          <div class="text-center">
             <button class="btn btn-primary" type="submit" name="signin">Sign in</button>
           </div>
-        </form>
+          </form>
+        </div>
       </div>
     </div>
   </div>
-</div>
-<!-- modal signin end -->
-<div class="container">
-  <h2 class="text-center font-weight-bold p-3" id="blue">Events</h2><hr>
-  <div class="row featurette">
-    <div class="col-md-7">
-      <h3 class="featurette-heading">First featurette heading. <span class="text-muted">It’ll blow your mind.</span></h3>
-      <p >Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-    </div>
-    <div class="col-md-5">
-      <svg class="img-fluid img-responsive" width="300" height="180" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 300x180"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">300x180</text></svg>
-    </div>
-  </div>
-  <hr class="featurette-divider">
-  <div class="row featurette">
-    <div class="col-md-7 order-md-2">
-      <h3 class="featurette-heading">Oh yeah, it’s that good. <span class="text-muted">See for yourself.</span></h3>
-      <p>Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-    </div>
-    <div class="col-md-5 order-md-1">
-      <svg class="img-fluid img-responsive" width="300" height="180" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 300x180"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">300x180</text></svg>
-    </div>
-  </div>
-  <hr class="featurette-divider">
-  <div class="row featurette">
-    <div class="col-md-7">
-      <h3 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h3>
-      <p>Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-    </div>
-    <div class="col-md-5">
-      <svg class="img-fluid img-responsive" width="300" height="180" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 300x180"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">300x180</text></svg>
-    </div>
-  </div>
-  <hr class="featurette-divider">
-</div>
-<br>
-<!-- Footer starts-->
-<footer class="footer bg-dark">
+  <!-- modal signin end -->
   <div class="container">
-    <div class="row">
-      <div class="col-md-4 p-2">
-        <div class="text-white text-center font-weight-bold">Social Media</div>
-      <ul class="list-group list-unstyled text-center">
-        <li class="list-inline-item"><a href="#" class="text-decoration-none text-light"><img src="assets/facebook-square.png" alt="f" width="15px" height="15px" style="background: white;">&nbsp;facebook.com/gec</a></li>
-        <li class="list-inline-item"><a href="#" class="text-decoration-none text-light"><img src="assets/instagram-square.png" alt="i" width="15px" height="15px" style="background: white;">&nbsp;instagram.com/gec</a></li>
-        <li class="list-inline-item"><a href="#" class="text-decoration-none text-light"><img src="assets/telegram-square.png" alt="t" width="15px" height="15px" style="background: white;">&nbsp;telegram.com/gec</a>
-        <li class="list-inline-item"><a href="#" class="text-decoration-none text-light"><img src="assets/gmail.png" alt="t" width="15px" height="15px" style="background: white;">&nbsp;gec@gmail.com</a></li>
-        </li>
-      </ul>
+    <h2 class="text-center font-weight-bold p-3" id="blue">Events</h2>
+    <hr>
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h3 class="featurette-heading">First featurette heading. <span class="text-muted">It’ll blow your mind.</span>
+        </h3>
+        <p>Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent
+          commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
       </div>
-    <div class="col-md-4 p-2">
-      <div class="text-white text-center font-weight-bold">Representatives</div>
-      <div class="row text-center">
-        <div class="col-md-6 p-2">
-          <ul class="list-group list-unstyled">
-            <li class="list-inline-item"><a href="#" class="text-decoration-none text-light">Person 1,<p><small style="font-size:11px">Secretary</small></p></a></li>
-            <li class="list-inline-item"><a href="#" class="text-decoration-none text-light">Person 2,<p><small style="font-size:11px">Assistant Secretary</small></p></a></li>
-          </ul>
-        </div>
-        <div class="col-md-6 p-2">
-          <ul class="list-group list-unstyled ">
-            <li class="list-inline-item"><a href="#" class="text-decoration-none text-light">Person 3,<p><small style="font-size:11px">Treasurer</small></p></a></li>
-            <li class="list-inline-item"><a href="#" class="text-decoration-none text-light">Person 4,<p><small style="font-size:11px">Executive Member</small></p></a></li>
-          </ul>
-        </div>
+      <div class="col-md-5">
+        <svg class="img-fluid img-responsive" width="300" height="180" xmlns="http://www.w3.org/2000/svg"
+          preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 300x180">
+          <title>Placeholder</title>
+          <rect width="100%" height="100%" fill="#eee" /><text x="50%" y="50%" fill="#aaa" dy=".3em">300x180</text>
+        </svg>
       </div>
     </div>
-    <div class="col-md-4 p-2">
-      <div class="text-white text-center font-weight-bold">Important Links</div>
-      <ul class="list-group list-unstyled text-center">
-        <li class="list-inline-item"><a href="#" class="text-decoration-none text-light">Events</a></li>
-        <li class="list-inline-item"><a href="#" class="text-decoration-none text-light">Newsletters</a></li>
-        <li class="list-inline-item"><a href="#" class="text-decoration-none text-light">Leaderboard</a></li>
-        <li class="list-inline-item"><a href="#" class="text-decoration-none text-light">About</a></li>
-      </ul>
+    <hr class="featurette-divider">
+    <div class="row featurette">
+      <div class="col-md-7 order-md-2">
+        <h3 class="featurette-heading">Oh yeah, it’s that good. <span class="text-muted">See for yourself.</span></h3>
+        <p>Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent
+          commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+      </div>
+      <div class="col-md-5 order-md-1">
+        <svg class="img-fluid img-responsive" width="300" height="180" xmlns="http://www.w3.org/2000/svg"
+          preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 300x180">
+          <title>Placeholder</title>
+          <rect width="100%" height="100%" fill="#eee" /><text x="50%" y="50%" fill="#aaa" dy=".3em">300x180</text>
+        </svg>
+      </div>
     </div>
+    <hr class="featurette-divider">
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h3 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h3>
+        <p>Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent
+          commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+      </div>
+      <div class="col-md-5">
+        <svg class="img-fluid img-responsive" width="300" height="180" xmlns="http://www.w3.org/2000/svg"
+          preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 300x180">
+          <title>Placeholder</title>
+          <rect width="100%" height="100%" fill="#eee" /><text x="50%" y="50%" fill="#aaa" dy=".3em">300x180</text>
+        </svg>
+      </div>
+    </div>
+    <hr class="featurette-divider">
   </div>
-</div>
-<div class="footer-strip text-center">
-  <div class="copyright">&copy;GEC <span id="year">
-    <script>document.getElementById("year").innerHTML=(new Date().getFullYear()-1);
-      document.getElementById("year").innerHTML+="-"+new Date().getFullYear();
-      </script>
-  </span></div>
-</div>
-</footer>
-<!-- Footer ends -->
-<script type="text/javascript" src="js/validation.js"></script>
-<script type="text/javascript" src="js/jquery.min.js"></script>
-<script type="text/javascript" src="js/popper.js"></script>
-<script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <br>
+  <!-- Footer starts-->
+  <footer class="footer bg-dark">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 p-2">
+          <div class="text-white text-center font-weight-bold">Social Media</div>
+          <ul class="list-group list-unstyled text-center">
+            <li class="list-inline-item"><a href="#" class="text-decoration-none text-light"><img
+                  src="assets/facebook-square.png" alt="f" width="15px" height="15px"
+                  style="background: white;">&nbsp;facebook.com/gec</a></li>
+            <li class="list-inline-item"><a href="#" class="text-decoration-none text-light"><img
+                  src="assets/instagram-square.png" alt="i" width="15px" height="15px"
+                  style="background: white;">&nbsp;instagram.com/gec</a></li>
+            <li class="list-inline-item"><a href="#" class="text-decoration-none text-light"><img
+                  src="assets/telegram-square.png" alt="t" width="15px" height="15px"
+                  style="background: white;">&nbsp;telegram.com/gec</a>
+            <li class="list-inline-item"><a href="#" class="text-decoration-none text-light"><img src="assets/gmail.png"
+                  alt="t" width="15px" height="15px" style="background: white;">&nbsp;gec@gmail.com</a></li>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-4 p-2">
+          <div class="text-white text-center font-weight-bold">Representatives</div>
+          <div class="row text-center">
+            <div class="col-md-6 p-2">
+              <ul class="list-group list-unstyled">
+                <li class="list-inline-item"><a href="#" class="text-decoration-none text-light">Person 1,<p><small
+                        style="font-size:11px">Secretary</small></p></a></li>
+                <li class="list-inline-item"><a href="#" class="text-decoration-none text-light">Person 2,<p><small
+                        style="font-size:11px">Assistant Secretary</small></p></a></li>
+              </ul>
+            </div>
+            <div class="col-md-6 p-2">
+              <ul class="list-group list-unstyled ">
+                <li class="list-inline-item"><a href="#" class="text-decoration-none text-light">Person 3,<p><small
+                        style="font-size:11px">Treasurer</small></p></a></li>
+                <li class="list-inline-item"><a href="#" class="text-decoration-none text-light">Person 4,<p><small
+                        style="font-size:11px">Executive Member</small></p></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 p-2">
+          <div class="text-white text-center font-weight-bold">Important Links</div>
+          <ul class="list-group list-unstyled text-center">
+            <li class="list-inline-item"><a href="#" class="text-decoration-none text-light">Events</a></li>
+            <li class="list-inline-item"><a href="#" class="text-decoration-none text-light">Newsletters</a></li>
+            <li class="list-inline-item"><a href="#" class="text-decoration-none text-light">Leaderboard</a></li>
+            <li class="list-inline-item"><a href="#" class="text-decoration-none text-light">About</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-strip text-center">
+      <div class="copyright">&copy;GEC <span id="year">
+          <script>document.getElementById("year").innerHTML = (new Date().getFullYear() - 1);
+            document.getElementById("year").innerHTML += "-" + new Date().getFullYear();
+          </script>
+        </span></div>
+    </div>
+  </footer>
+  <!-- Footer ends -->
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script type="text/javascript" src="js/popper.js"></script>
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/validation.js"></script>
 </body>
+
 </html>
